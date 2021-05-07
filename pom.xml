@@ -12,6 +12,7 @@
     <modules>
         <module>elastic-search-basic-example</module>
         <module>postgresql-example</module>
+        <module>rabbitmq-example</module>
     </modules>
 
 
