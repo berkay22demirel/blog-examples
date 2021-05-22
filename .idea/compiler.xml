@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="postgresql-example" />
         <module name="rabbitmq-example" />
+        <module name="graphql-example" />
         <module name="elastic-search-basic-example" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="elastic-search-basic-example" options="-parameters" />
+      <module name="graphql-example" options="-parameters" />
       <module name="postgresql-example" options="-parameters" />
       <module name="rabbitmq-example" options="-parameters" />
     </option>

@@ -1,0 +1,61 @@
+type Player {
+    name: String,
+    age: Int,
+    height: Int,
+    weight: Int
+}
+
+type Team {
+    name: String,
+    country: String,
+    playerList: [Player]
+}
+
+type Score {
+    home: Int,
+    away: Int
+}
+
+type Match {
+    home: Team,
+    away: Team,
+    score: Score,
+    date: String,
+    organization: String
+}
+
+type Query {
+    getAll: [Match]
+    getById(id: Int): Match
+}
+
+
+input PlayerInput {
+    name: String!,
+    age: Int!,
+    height: Int!,
+    weight: Int!
+}
+
+input TeamInput {
+    name: String!,
+    country: String!,
+    playerList: [PlayerInput]
+}
+
+input ScoreInput {
+    home: Int!,
+    away: Int!
+}
+
+input MatchInput {
+    home: TeamInput!,
+    away: TeamInput!,
+    score: ScoreInput!,
+    date: String,
+    organization: String!
+}
+
+type Mutation {
+    create(match: MatchInput): Match
+}
