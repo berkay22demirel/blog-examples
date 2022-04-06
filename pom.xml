@@ -14,6 +14,7 @@
         <module>postgresql-example</module>
         <module>rabbitmq-example</module>
         <module>graphql-example</module>
+        <module>jwt-example</module>
     </modules>
 
 
