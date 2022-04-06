@@ -15,6 +15,7 @@
         <module>rabbitmq-example</module>
         <module>graphql-example</module>
         <module>jwt-example</module>
+        <module>effective-java</module>
     </modules>
 
 
